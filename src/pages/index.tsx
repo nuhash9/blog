@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Button from "../components/Button";
 
 const Home: NextPage = () => {
   return (
@@ -10,17 +11,19 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <main className="container mx-auto min-h-screen flex flex-col">
-        <header className=" self-start">
-          <h1>thoughts</h1>
-          <h3>of nu</h3>
-        </header>
+      <main className="container mx-auto">
+        <section className="min-h-screen flex flex-col w-[20vw] text-right border-r-2 border-black pr-4">
+          <header className="grow p-2">
+            <h1 className="text-3xl font-bold">Thoughts</h1>
+            <h3>of Nu</h3>
+          </header>
 
-        <nav className="flex flex-col justify-center self-center">
-          <div>Home</div>
-          <div>Posts</div>
-          <div>Twitter</div>
-        </nav>
+          <nav className="flex flex-col grow gap-4 items-end">
+            <Button>Home</Button>
+            <Button>Posts</Button>
+            <Button>Twitter</Button>
+          </nav>
+        </section>
       </main>
     </>
   );
