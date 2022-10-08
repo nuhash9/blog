@@ -7,7 +7,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Blog | Nuhash</title>
         <meta name="description" content="Things I am thinking about" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main className="container mx-auto min-h-screen flex flex-col">
