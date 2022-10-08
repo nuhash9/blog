@@ -1,3 +1,4 @@
+import Head from "next/head"
 import { useRouter } from "next/router"
 
 const PostPage = () => {
@@ -5,9 +6,17 @@ const PostPage = () => {
   const title = slug
 
   return (
-    <div>
-      <h2>{title}</h2>
-    </div>
+    <>
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content="Things I am thinking about" />
+        <link rel="icon" href="/favicon.png" />
+      </Head>
+
+      <div>
+        <h2>{title}</h2>
+      </div>
+    </>
   )
 }
 

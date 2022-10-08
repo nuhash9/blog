@@ -11,8 +11,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <main className="container mx-auto">
-        <section className="min-h-screen flex flex-col w-[20vw] text-right border-r-2 border-black pr-4">
+      <main>
+        {/* <section className="min-h-screen flex flex-col w-[20vw] text-right border-r-2 border-black pr-4">
           <header className="grow p-2">
             <h1 className="text-3xl font-bold">Thoughts</h1>
             <h3>of Nu</h3>
@@ -23,7 +23,7 @@ const Home: NextPage = () => {
             <Button>Posts</Button>
             <Button>Twitter</Button>
           </nav>
-        </section>
+        </section> */}
       </main>
     </>
   );
