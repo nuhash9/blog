@@ -1,3 +1,4 @@
+import Link from "next/link"
 import Button from "./Button"
 
 const Sidebar = () => {
@@ -9,9 +10,15 @@ const Sidebar = () => {
       </header>
 
       <nav className="flex flex-col grow gap-4 items-end">
-        <Button>Home</Button>
-        <Button>Posts</Button>
-        <Button>Twitter</Button>
+        <Link href="/" passHref>
+          <Button>Home</Button>
+        </Link>
+        <Link href="/posts" passHref>
+          <Button>Posts</Button>
+        </Link>
+        <Link href="https://twitter.com/NuhashC" passHref>
+          <Button>Twitter</Button>
+        </Link>
       </nav>
     </section>
   )

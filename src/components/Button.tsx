@@ -1,11 +1,11 @@
-import { ReactNode } from "react"
+import { forwardRef, LegacyRef, MouseEventHandler, ReactNode } from "react"
 
-const Button = ({ children }: {children: ReactNode}) => {
+const Button = forwardRef<HTMLAnchorElement, any>(({ onClick, href, children } : {onClick : any, href : any, children : ReactNode}, ref : LegacyRef<HTMLAnchorElement>) => {
   return (
-    <div className="w-4/5 p-2 pr-4 bg-green-100">
-      { children }
-    </div>
+    <a href={href} onClick={onClick} ref={ref} className="w-4/5 p-2 pr-4 bg-green-100">
+        { children }
+    </a>
   )
-}
+})
 
 export default Button
