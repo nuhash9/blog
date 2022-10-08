@@ -8,4 +8,6 @@ const Button = forwardRef<HTMLAnchorElement, any>(({ onClick, href, children } :
   )
 })
 
+Button.displayName = "NavButton"
+
 export default Button
