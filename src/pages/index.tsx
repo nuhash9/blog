@@ -10,9 +10,17 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="container mx-auto min-h-screen">
-        <h1>thoughts</h1>
-        <h3>of nu</h3>
+      <main className="container mx-auto min-h-screen flex flex-col">
+        <header className=" self-start">
+          <h1>thoughts</h1>
+          <h3>of nu</h3>
+        </header>
+
+        <nav className="flex flex-col justify-center self-center">
+          <div>Home</div>
+          <div>Posts</div>
+          <div>Twitter</div>
+        </nav>
       </main>
     </>
   );
