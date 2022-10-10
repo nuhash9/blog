@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Button from "../components/Button";
+import PageTitle from "../components/PageTitle";
 
 const Home: NextPage = () => {
   return (
@@ -11,8 +12,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <main>
+      <main className="px-8 pt-4">
         {/* recent posts and random post button go here */}
+        <PageTitle>Recent Posts</PageTitle>
       </main>
     </>
   );

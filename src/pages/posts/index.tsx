@@ -1,4 +1,5 @@
 import Head from "next/head"
+import PageTitle from "../../components/PageTitle"
 
 const AllPosts = () => {
   return (
@@ -9,7 +10,9 @@ const AllPosts = () => {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <div>Posts</div>
+      <div className="px-8 pt-4">
+        <PageTitle>Posts</PageTitle>
+      </div>
     
     </>
   )
