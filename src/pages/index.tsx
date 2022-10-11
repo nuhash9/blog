@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Button from "../components/Button";
 import PageTitle from "../components/PageTitle";
 
 const Home: NextPage = () => {
+
   return (
     <>
       <Head>
